@@ -1,0 +1,394 @@
+body {
+    margin: 0;
+}
+
+/*Navigation Bar Stuff*/
+
+.logo {
+    font-weight: 800;
+    padding: 0px 20px;
+}
+
+.logo, ul, a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0px 30px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 15px;
+}
+
+nav ul a {
+    font-size: 1.2rem;
+}
+
+nav li a:hover {
+    color: red;
+}
+
+/*Hero Section*/
+
+.hero_container {
+    position: relative;
+    display: flex;
+}
+
+.hero_container img {
+    margin: 0;
+    padding-top: 0;
+    width: 100%;
+    height: 500px;
+}
+
+.heading {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.flavortext {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.learn-more {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+}
+
+/*Footer*/
+
+footer {
+    margin: 0;
+    padding: 25px;
+    background-color: black;
+}
+
+.icons {
+    text-align: center;
+}
+
+.icons a {
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    line-height: 43px;
+    margin: 0 8px;
+}
+
+.icons a:hover {
+    color: red;
+}
+
+/*Map*/
+
+.map h1{
+    margin-bottom: 10px;
+}
+
+.map {
+    padding-bottom: 30px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*Contact Form*/
+
+.parent {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.form-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-section h1 {
+    margin-bottom: 10px;
+}
+
+.contactform {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: rgb(192, 192, 192);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-name, .input-email, .input-message {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #a1a1a1;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.contactform textarea {
+    height: 100px;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 15px;
+    border: none;
+    background-color: rgb(238, 238, 238);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(225, 225, 225);
+}
+
+/*Top Menu Stuff*/
+
+.menu-top {
+    padding: 0px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+#cart-icon {
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#cart-icon .cart-item-count{
+    position: absolute;
+    top: -10px;
+    right: -9px;
+    background: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+/*Menu Item Stuff*/
+
+.menu-items {
+    padding: 30px 9%;
+}
+
+.all-menu-foods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.food-image img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.food-listing {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8dfdf;
+}
+
+.food-listing .price-cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-cart .price {
+    font-size: 20px;
+}
+
+.price-cart .add-cart{
+    padding: 10px;
+    color: white;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.price-cart .add-cart:hover{
+    color: red;
+}
+
+/*Shopping Cart*/
+
+.shopping-cart {
+    position: fixed;
+    top: 0px;
+    right: -100%;
+    width: 360px;
+    height: 100%;
+    padding: 40px 20px 40px;
+    background: white;
+    overflow: auto;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+.shopping-cart.active {
+    right: 0px;
+}
+
+.cart-title {
+    margin-top: 0;
+    text-align: center;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cart-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.cart-details{
+    display: grid;
+    gap: 8px;
+    margin-right: auto;
+}
+
+.cart-item-name {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item-quantity .count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border: solid;
+    border-radius: 10px;
+}
+
+.cart-item-quantity #decrease{
+    margin-right: 5px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(206, 206, 206);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cart-item-quantity #increase {
+    margin-left: 5px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(206, 206, 206);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+#cart-remove {
+    cursor: pointer;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: 1px solid black;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.total-price {
+    margin-left: 10px;
+}
+
+#close-cart {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}

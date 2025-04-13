@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waffle Parlour</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">Waffle Parlour</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="shopping-cart">
+        <h2 class="cart-title">Your Cart</h2>
+
+        <div class="cart-content">
+            <!-- <div class="cart-item">
+                <img src="/images/Plain Waffle.png" class="cart-image">
+                <div class="cart-details">
+                    <h2 class="cart-item-name">Plain Waffle</h2>
+                    <span class="cart-item-price">$15.50</span>
+                    <div class="cart-item-quantity">
+                        <i class="fa-solid fa-minus" id="decrease"></i>
+                        <span class="count">1</span>
+                        <i class="fa-solid fa-plus" id="increase"></i>
+                    </div>
+                </div>
+                <i class="fa-solid fa-trash" id="cart-remove"></i>
+            </div> -->
+        </div>
+
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0.00</div>
+        </div>
+        <button class="cart-clear">Clear</button>
+        <button class="cart-buy">Buy</button>
+        <i class="fa-solid fa-xmark" id="close-cart"></i>
+    </div>
+
+    <div class="menu-top">
+        <h1>Menu</h1>
+
+        <div id="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-item-count"></span>
+        </div>
+    </div>
+
+    <section class="menu-items">
+        <div class="all-menu-foods">
+
+            <!-- Plain Waffle -->
+            <div class="food-listing">
+                <div class="food-image">
+                    <img src="/images/Plain Waffle.png">
+                </div>
+                <h2 class="food-name">Plain Waffle</h2>
+                <div class="price-cart">
+                    <span class="price">$15.50</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+            </div>
+
+            <!-- Strawberry Waffle -->
+            <div class="food-listing">
+                <div class="food-image">
+                    <img src="/images/Strawberry Banana Waffle.png">
+                </div>
+                <h2 class="food-name">Strawberry Waffle</h2>
+                <div class="price-cart">
+                    <span class="price">$18.50</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+            </div>
+
+            <!-- Tiramisu Waffle -->
+            <div class="food-listing">
+                <div class="food-image">
+                    <img src="/images/Tiramisu Waffle.png">
+                </div>
+                <h2 class="food-name">Tiramisu Waffle</h2>
+                <div class="price-cart">
+                    <span class="price">$17.50</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+            </div>
+
+            <!-- Injeolmi Waffle -->
+            <div class="food-listing">
+                <div class="food-image">
+                    <img src="/images/Injeolmi Waffle.png">
+                </div>
+                <h2 class="food-name">Injeolmi Waffle</h2>
+                <div class="price-cart">
+                    <span class="price">$16.50</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+            </div>
+
+            <!-- Plain Croffle -->
+            <div class="food-listing">
+                <div class="food-image">
+                    <img src="/images/Plain Croffle.png">
+                </div>
+                <h2 class="food-name">Plain Croffle</h2>
+                <div class="price-cart">
+                    <span class="price">$11.75</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+            </div>
+
+            <!-- Cookie Butter Croffle -->
+            <div class="food-listing">
+                <div class="food-image">
+                    <img src="/images/Cookie Butter Croffle.png">
+                </div>
+                <h2 class="food-name">Cookie Butter Croffle</h2>
+                <div class="price-cart">
+                    <span class="price">$15.75</span>
+                    <i class="fa-solid fa-cart-shopping add-cart"></i>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_container">
+            <div class="icons">
+                <a href="https://web-cdn.bsky.app/profile/violitch.bsky.social"><i class="fa-brands fa-bluesky"></i></a>
+                <a href="https://www.instagram.com/violitch/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/_violitch_"><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-tumblr"></i></a>
+            </div>
+
+            
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

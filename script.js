@@ -65,9 +65,9 @@ const addtoCart = foodListing => {
         const itemCount = cartItem.querySelector(".count");
         if (itemCount.textContent > 1) {
             itemCount.textContent--;
+            updateCount(-1);
         }
         updateTotal();
-        updateCount(-1);
     };
 
     updateTotal();
